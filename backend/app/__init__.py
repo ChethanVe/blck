@@ -16,10 +16,10 @@ CORS(app)
 
 username = 'root'
 password = 'root'
-host = 'localhost:3306'
+host = '0.0.0.0:3306'
 db='blck_luxury'
 
-app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_HOST'] = '0.0.0.0'
 app.config['MYSQL_USER'] = username
 app.config['MYSQL_PASSWORD'] =  password
 app.config['MYSQL_DB'] = db
