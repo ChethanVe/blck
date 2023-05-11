@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+
+  blck_database:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    volumes:
+      - ./dump:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: blck_luxury
+    ports:
+      - "3306:3306"
+      
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
