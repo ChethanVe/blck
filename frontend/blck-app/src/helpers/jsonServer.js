@@ -1,1 +1,1 @@
-export const json_server_url = "http://localhost:3005"
+export const json_server_url = "http://172.19.0.80:3005"
