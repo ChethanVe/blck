@@ -1,0 +1,4 @@
+export const ACTION_TYPES = {
+    FETCH_START:"FETCH_START",
+    CHANGE_INPUT:"CHANGE_INPUT"
+}

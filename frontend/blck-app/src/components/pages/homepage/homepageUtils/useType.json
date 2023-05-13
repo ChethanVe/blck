@@ -1,0 +1,16 @@
+{
+    "data":[
+        {
+            "id":1,
+            "name":"Chauffeur Driven"
+        },
+        {
+            "id":2,
+            "name":"Airport Pickup Drop"
+        },
+        {
+            "id":3,
+            "name":"Self Drive"
+        }
+    ]
+}

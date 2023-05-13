@@ -1,0 +1,34 @@
+{
+    "data":[
+        {
+            "id":0,
+            "name":"AC",
+            "image":"ac.png"
+        },
+        {
+            "id":1,
+            "name":"USB",
+            "image":"usb.png"
+        },
+        {
+            "id":2,
+            "name":"Air bag",
+            "image":"airbag.png"
+        },
+        {
+            "id":3,
+            "name":"Bluetooth",
+            "image":"bluetooth.png"
+        },
+        {
+            "id":4,
+            "name":"GPS Tracker",
+            "image":"gps-tracker.png"
+        },
+        {
+            "id":5,
+            "name":"Parking Assistance",
+            "image":"parking-assistance.png"
+        }
+    ]
+}

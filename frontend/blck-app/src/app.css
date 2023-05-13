@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+.app{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.pages{
+    font-family: 'Prompt', sans-serif;
+    width: 100%;
+    padding: 0 20vh 0 20vh;
+    background-color: black;
+    color: white;
+}
+.scroll_button{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    border: 2px solid var(--secondary-color);
+    background-color:black;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.scroll_button img{
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 1100px) {
+    .pages{
+        padding: 5px 5px;
+    }
+}

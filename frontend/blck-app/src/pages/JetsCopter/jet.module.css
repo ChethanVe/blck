@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --secondary-color: #E6483D;
+    --text-color: #EBEBEB;
+    --text-color-secondary: #aaaaaa;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scaledAppear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.jets {
+    font-family: "Prompt";
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0 20vh 0 20vh; */
+    /* background-color: black; */
+    color: white;
+}
+.backimgjet{
+    width: 100%;
+    height: 500px;
+    background-image: url(../../assets/images/Jet/Group\ 3667.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jetElements {
+    width: 100%;
+    /* border: 1px solid red; */
+
+}
+.jetgetin{
+    /* top:360px; */
+    /* left:807px; */
+    /* bottom: 0px; */
+    /* right:0px; */
+    height: auto;
+    width: 420px;
+    /* background: #1A1A1A 0% 0% no-repeat padding-box; */
+    /* background: #ffffff 0% 0% no-repeat padding-box; */
+    background-color: transparent no-repeat padding-box;
+    /* border: 3px solid #1d1b1bc8; */
+    /* border: 3px solid rgba(246, 246, 246, 0.45); */
+    opacity: .9;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    /* position: absolute; */
+    /* mix-blend-mode:multiply; */
+    padding: .8rem;
+}
+.jetgetin input{
+    height: 2rem;
+}
+.headingjets{
+    margin: 0 .5rem;
+}
+.headingjets h3{
+    display: inline-block;
+    font-size: medium;
+    font-weight: bold;
+    font-family: "Prompt";
+    color: white;
+}
+.headingjets p{
+    font-size: small;
+    font-weight: bold;
+    font-family: "Prompt";
+    color: white;
+}
+.firstname{
+    display: flex;
+    justify-content: space-between;
+}
+.firstname input{
+    width: 49%;
+    margin: 0 .5rem;
+    font-size: medium;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    outline:hidden;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+}
+.firstname input::placeholder{
+    color: #fff; 
+}
+.emailsection{
+    display: flex;
+}
+.emailsection input{
+    width: 100%;
+    margin: 0 .5rem;
+    margin-top: .6rem;
+    font-size: medium;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    outline:hidden;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+}
+.emailsection input::placeholder{
+    color: #fff;
+}
+
+.travelingsection{
+    display: flex;
+    justify-content: space-between;
+}
+.travelingsection input{
+    width: 49%;
+    margin: 0 .5rem;
+    margin-top: .6rem;
+    font-size: medium;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    outline:hidden;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+}
+.travelingsection input::placeholder{
+    color: #fff;
+}
+.dropdownsection{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.dropdownsection select, .dropdownsection input{
+    width: 49%;
+    margin: 0 .5rem;
+    margin-top: .6rem;
+    font-size: medium;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    outline:hidden;
+    box-sizing: border-box;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.dropdownsection input::placeholder{
+    color: #fff;
+}
+
+.dateandtimesection{
+    display: flex;
+    justify-content: space-between;
+}
+.dateandtimesection input{
+    width: 49%;
+    margin: 0 .5rem;
+    margin-top: .6rem;
+    font-size: medium;
+    background-color: #000;
+    border: none;
+    /* color: #fff; */
+    outline:hidden;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    color-scheme: dark;
+}
+
+.dateandtimesection input::placeholder{
+    color: #fff;
+}
+.aircraft{
+    display: flex;
+}
+.aircraft input{
+    width: 100%;
+    margin: .6rem .5rem;
+    font-size: medium;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    outline:hidden;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+}
+.aircraft input::placeholder{
+    color: #fff;
+}
+.getbtn{
+    display:flex
+}
+.getbtn button{
+    width: 100%;
+    background-color: red;
+}
+.getbtn button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.getbtn button:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.getbtn button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+/* For Use Ref messages */
+.refdivision{
+    display: flex;
+    justify-content: space-between;
+}
+.tinyText{
+    font-size: 10px;
+    padding: 0 10px;
+}
+.secondaryColor{
+    color: var(--secondary-color);
+}

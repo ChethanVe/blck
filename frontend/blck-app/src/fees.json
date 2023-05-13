@@ -1,0 +1,9 @@
+{
+    "fees":[{
+        "gstChauffeur":0.12,
+        "gstSelfDrive":0.18,
+        "extraKms":0.01,
+        "extraHrs":0.1,
+        "driverAllowance":0.1
+    }]
+}

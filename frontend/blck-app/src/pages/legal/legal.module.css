@@ -1,0 +1,74 @@
+.main{
+    width: 100%;
+}
+.header{
+    background-image: url('../../assets/images/common/headerRectangle.png');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 78px;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+}
+.header span{
+    font-size: 21px;
+}
+.content{
+    padding: 0 2rem;
+    font-size: 14px;
+    text-align: justify;
+}
+.content section{
+    margin: 2rem 0;
+}
+.subHeader{
+    font-size: 18px;
+}
+.subHeaderBig{
+    font-size: 22px;
+}
+section ol {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+section ol li{
+    list-style-type:upper-alpha;
+    font-size: 22px;
+}
+section ol li ul{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+section ol li ul li{
+    list-style-type:lower-alpha;
+    font-size: 14px;
+}
+section ol li ul li ul{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+section ol li ul li ul li{
+    list-style-type:lower-roman;
+}
+section ol li ul li ul li ul{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+section ol li ul li ul li ul li{
+    list-style-type:disc;
+}
+section ol li ul li ul li ul li ul{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+section ol li ul li ul li ul li ul li{
+    list-style-type:circle;
+}
+.smallFont{
+    font-size: 14px;
+}

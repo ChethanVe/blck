@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --secondary-color: #E6483D;
+    --text-color: #EBEBEB;
+    --text-color-secondary: #aaaaaa;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scaledAppear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.yachts {
+    font-family: 'Prompt';
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0 20vh 0 20vh; */
+    /* background-color: black; */
+    color: white;
+}
+.yachtElements {
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.backimg{
+    width: 100%;
+    height: 500px;
+    background-image: url(../../assets/images/yachts/Group\ 3666.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+
+
+/*YachtMenu*/
+
+.cardsurface{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 500px));
+    grid-gap: 50px;
+    justify-content: space-around;
+}
+
+.card_container{
+    margin: 25px auto 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.card_container img {
+    max-width: 100%;
+    height: 300px;
+  }
+.card{
+    background-color: #221f1f;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(75, 75, 75, 0.07);
+    z-index: 1;
+}
+/* .card_body{
+    display: inline-block;
+} */
+/* .number{
+    margin-top: 15px;
+} */
+.designbody{
+    display: flex;
+    justify-content:space-between
+}
+
+.card_title{
+    /* font-family: "Cormorant Garamond", serif; */
+    font-family: 'Prompt',;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 60px;
+    margin: 10px 0;
+    text-transform: capitalize;
+    /* color: black; */
+}
+.sharelogo{
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 60px;
+    /* color: black; */
+    margin: 26px 0;
+
+}
+
+.card_description{
+    /* text-align: center; */
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    /* color:black; */
+    margin: 0 1rem;
+    font-size: smaller;
+}
+.cardinfo, .foody, .booksailing{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+
+
+.cardinfo h4{
+    /* color:black; */
+    margin: 1.5rem 0;
+    font-size: medium;
+    font-weight:500;
+}
+
+.separate{
+    display: flex;
+    justify-content: space-between;
+}
+
+.proplelogo, .drinklogo, .anchorlogo{
+    /* color:black; */
+    margin: 1.5rem 0;
+}
+.sectiondivision{
+margin-top: 1.8rem;
+}
+.food_and_drink, .sailing{
+    /* color:black; */
+    font-size: small;
+    font-weight: 200;
+    margin: 1rem 0;
+}
+.sectiondivision h3, .food_and_drink h3, .sailing h3 {
+    font-size: small;
+    font-weight: 300;
+} 
+
+.booknow{
+    color: rgb(88, 88, 240);
+    font-size:medium;
+    font-weight: 300;
+    margin: 1.5rem 0;
+    cursor: pointer;
+}
+
+
+/* Yacht Form */
+
+.modalbody{
+    display:inline-block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    padding: 0.3rem 2rem;
+}
+.modalinput input{
+    display:inline-block;
+    margin: .5rem 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.modaldatetime{
+    /* display: flex;
+    justify-content:space-between; */
+    margin: .5rem 0;
+}
+
+.modaldatetime input{
+    width: 100%;
+    height: 2.5rem;
+}
+.modaldatetime p{
+    font-size: medium;
+    font-weight: 300;
+    margin: .3rem 0;
+}
+.couponsection{
+    display: flex;
+    justify-content: space-between;
+}
+.couponsection input{
+    width: 75%;
+    height: 2.5rem;
+}
+.couponsection Button{
+    width: 20%;
+}
+.totalprice{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+.totalprice h3{
+    font-size: large;
+    font-weight: 300;
+}
+.readsection{
+    display: flex;
+    justify-content: space-between;
+}
+.checkboxsection{
+    display: flex;
+}
+.checkboxsection a{
+    text-decoration: none;
+}
+
+.verify{
+    width: 100%;
+}
+
+/* 
+@media only screen and (min-width: 1600px) {
+
+    .card {
+        width: 100%;
+        height: 230px;
+       
+    }
+
+    .card img {
+        width: 100%;
+        height: 160px;
+        border-radius: 5px;
+    }
+
+    .banner,.banner1,.banner2{
+        height: 400px;
+    }
+}
+@media only screen and (min-width: 1800px) {
+
+    .card {
+        width: 100%;
+        height: 250px;
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        border-radius: 5px;
+    }
+
+    .banner,.banner1,.banner2{
+        height: 470px;
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+
+    .backimg {
+        width: 100%;
+        height: 25vh;
+    }
+
+   
+}
+
+
+@media screen and (max-width: 1100px) {
+    .bannerSpan {
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+    }
+    .banner,.banner1, .banner2 {
+        height: 370px;
+    }
+    .bookNowBtn {
+        font-size: 10px;
+    }
+    .bodySection {
+        grid-template-columns: repeat(2, 49%);
+    }
+    .tab {
+        font-size: 1.3rem;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content:center ;
+    }
+    .tabSection{
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        transition: all .3s;
+        margin-top: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 880px) {
+    .bannerSpan {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .banner,.banner1, .banner2 {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .bannerSpan {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        font-weight: 300;
+    }
+    .banner,.banner1, .banner2 {
+        height: 270px;
+    }
+
+    .tab {
+        font-size: 1.3rem;
+    }
+    .tabSection{
+        margin-top: .5rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .bannerSpan {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+    .banner,.banner1, .banner2 {
+        height: 250px;
+    }
+    .tab {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bannerSpan {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    .bodySection {
+        grid-template-columns: repeat(1, 99%);
+    }
+    .banner,.banner1, .banner2 {
+        height: 200px;
+    }
+    .tab {
+        font-size: 1rem;
+    }
+    .backimg {
+        width: 100%;
+        height: 250px;
+    }
+    .card img {
+        width: 100%;
+        height: 180px;
+    }
+    .filterElements {
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        top: 0;
+        right: 0;
+        padding: 6rem 1rem 1rem 1rem;
+        z-index: 1;
+        transition: all .3s;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    .tabSection{
+        justify-content: space-between;
+    }
+    .card {
+        width: 100%;
+        height: 250px;
+    }
+    .card img {
+        width: 100%;
+        height: 180px;
+    }
+    .tabSection {
+        gap: 1rem;
+    }
+    .tab {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        width: 100%;
+        height: 200px;
+    }
+    .card img {
+        width: 100%;
+        height: 140px;
+    }
+    .tab {
+        font-size: .7rem;
+    }
+    .banner,.banner1, .banner2 {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .tab {
+        font-size: .65rem;
+    }
+    .banner,.banner1, .banner2 {
+        height: 120px;
+    }
+} */
+
+
+/* For Use Ref messages */
+.tinyText{
+    font-size: 10px;
+}
+.secondaryColor{
+    color: var(--secondary-color);
+}
+
+
+

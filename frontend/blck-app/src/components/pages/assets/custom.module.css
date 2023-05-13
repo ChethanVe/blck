@@ -1,0 +1,156 @@
+:root {
+    --secondary-color: #E6483D;
+    --text-color: #EBEBEB;
+    --text-color-secondary: #aaaaaa;
+}
+
+.prefixed {
+    width: 100%;
+}
+
+.headerText {
+    font-size: 18px;
+    font-weight: 300;
+}
+.extraTinyText{
+    font-size: 8px;
+}
+.tinyText{
+    font-size: 10px;
+}
+.extraSmallText{
+    font-size: 12px;
+}
+.smallText{
+    font-size: 14px;
+}
+.mediumText{
+    font-size: 18px;
+}
+.bigText{
+    font-size: 24px;
+}
+.b500{
+    font-weight: 300;
+}
+.paragraphText {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.descFormat {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 0 1rem;
+}
+
+.descFormat2 {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.headerFormat {
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lightText {
+    font-weight: 300;
+}
+
+.secondaryColor {
+    color: var(--secondary-color);
+}
+
+.primaryBtn {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--text-color-secondary);
+    color: var(--text-color);
+    font-weight: 300;
+    height: 40px;
+    transition: all .3s;
+}
+
+.primaryBtn:hover {
+    transition: all .3s;
+    background-color: var(--secondary-color);
+    border: 1px solid transparent;
+}
+
+.primaryBtnFilled {
+    width: 100%;
+    background-color: var(--secondary-color);
+    border: 1px solid transparent;
+    color: var(--text-color);
+    font-weight: 300;
+    height: 40px;
+    transition: all .3s;
+}
+.bold{
+    font-weight: 300;
+}
+.bolder{
+    font-weight: 300;
+}
+.center{
+    width: 100%;
+    text-align: center;
+}
+.end{
+    width: 100%;
+    text-align: end;
+}
+.appear{
+    animation: 1s ease-in 0s 1 appear;
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.disappear{
+    animation: 1s ease-in 0s 1 appear;
+}
+@keyframes appear {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.slideInLeft{
+    animation: .3s ease-in-out 0s 1 slideInLeft;
+}
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slideOutLeft{
+    animation: .3s ease-in-out 0s 1 slideOutLeft;
+}
+  @keyframes slideOutLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }

@@ -1,0 +1,88 @@
+{
+  "summary": [
+    {
+      "name": "BMW 7 series",
+      "date": "12-05-2023",
+      "time": "18:45:46",
+      "allowance": 800,
+      "additionalKms": 0,
+      "additionalHrs": 0,
+      "totalPrice": 8000,
+      "deposit": 50000,
+      "img": "car_fleet/BMW 7-Series-0.png",
+      "id": 1
+    }
+  ],
+  "standard": [
+    {
+      "date": "",
+      "time": "",
+      "extraKm": "",
+      "extraHr": "",
+      "driverAllowance": "",
+      "deposit": "",
+      "price": "",
+      "id": 1
+    }
+  ],
+  "outStation": [
+    {
+      "startDate": "5-11-2023",
+      "endDate": "5-11-2023",
+      "startTime": "15:44:23",
+      "endTime": "15:44:23",
+      "extraKm": -23,
+      "deposit": 50000,
+      "price": 90000,
+      "allowance": 7500,
+      "basePrice": 90000,
+      "stdPrice": 75000,
+      "days": 1,
+      "name": "Mercedes-GLS 400",
+      "carId": 68,
+      "img": "car_fleet/rent_mercedes_gls_350d_2 copy0.webp",
+      "id": 1
+    }
+  ],
+  "airport": [
+    {
+      "date": "2023-04-14",
+      "time": "16:07",
+      "flightNo": "",
+      "pickupDrop": "Pickup",
+      "price": 12000,
+      "deposit": 10000,
+      "driverAllowance": 1200,
+      "toll": 1000,
+      "parking": 1000,
+      "name": "BMW-5 Series",
+      "carId": 13,
+      "img": "bmw-5series-0.png",
+      "startDate": "2023-04-14",
+      "endDate": "2023-04-14",
+      "id": 1
+    }
+  ],
+  "selfDrive": [
+    {
+      "startDate": "12-05-2023",
+      "endDate": "12-05-2023",
+      "startTime": "12:39:22",
+      "endTime": "12:39:22",
+      "extraKm": 0,
+      "deposit": 40000,
+      "days": "",
+      "name": "BMW 5 series",
+      "carId": 13,
+      "img": "car_fleet/Mark5_mercedes_s350D_1.webp",
+      "id": 1
+    }
+  ],
+  "login": [
+    {
+      "userId": 1,
+      "auth": false,
+      "id": 1
+    }
+  ]
+}

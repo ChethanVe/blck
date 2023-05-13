@@ -1,0 +1,1 @@
+export const json_server_url = "http://localhost:3005"

@@ -1,0 +1,82 @@
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.signupSection{
+    max-width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: 1s ease-in 0s 1 appear;
+}
+.container{
+width: 420px;
+min-height: fit-content ;
+background-color: white;
+color: black;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+gap: 1rem;
+align-items: flex-start;
+padding: 1rem;
+margin: 5% auto;
+}
+
+.detailsInput{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+}
+.inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.inputs input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    padding: 0 .5rem;
+}
+.userDetails{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: .5rem;
+}
+.usernameInput{
+    max-width: 49%;
+}
+.splitInputs{
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+}
+.phone{
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+}
+.countryCode{
+    max-width: 100px;
+    display: flex;
+    text-align: center;
+}
+.phoneInput{
+    width: 100%;
+}
+.bottomSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}

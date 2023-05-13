@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --secondary-color: #E6483D;
+    --text-color: #EBEBEB;
+    --text-color-secondary: #aaaaaa;
+}
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes scaledAppear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.homepage {
+    font-family: 'Manrope', sans-serif;
+    width: 100%;
+    /* padding: 0 20vh 0 20vh; */
+    background-color: black;
+    color: white;
+}
+
+.homepageElements {
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.banner {
+    width: 100%;
+    height: 55vh;
+    background-image: url('../../xd-imports/homepage-banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.banner span {
+    width: 20vw;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    font-size: 3.25rem;
+    font-weight: 300;
+    /* border: 1px solid yellow; */
+}
+
+.filter {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all .3s;
+    /* border: 1px solid pink; */
+}
+.filter img{
+    cursor: pointer;
+}
+.tabSection {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    transition: all .3s;
+    margin-top: 1rem;
+    /* border: 1px solid yellow; */
+}
+
+.tab {
+    color: var(--text-color-secondary);
+    font-size: 1.3rem;
+    font-weight: 300;
+    border: 3px solid transparent;
+    transition: all .3s;
+    cursor: pointer;
+    padding: 0 .5rem 0 .5rem;
+}
+
+.tab:hover {
+    color: var(--text-color);
+    border-bottom: 3px solid var(--secondary-color);
+    transition: all .3s;
+}
+
+.selected {
+    color: var(--text-color);
+    border-bottom: 3px solid var(--secondary-color);
+    transition: all .3s;
+}
+
+.bodySection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 32.6%);
+    row-gap: 1rem;
+    column-gap: 1rem;
+    animation: 1s ease-in 0s 1 appear;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* border: 1px solid blue; */
+}
+
+.card {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: 1rem;
+    transition: all .3s;
+    position: relative;
+    animation: .3s ease-in 0s 1 scaledAppear;
+    /* border: 1px solid green; */
+}
+
+.card:hover {
+    transition: all .3s;
+    background-image: linear-gradient(to bottom, #262525 0%, #4D4D4D 100%);
+}
+.card img {
+    width: 100%;
+    height: 65%;
+}
+.card:hover img{
+    transform:scale(102%);
+    transition: .5s;
+}
+.carDetails {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 300;
+    /* padding: 0 2rem 0 2rem; */
+}
+
+.carRentPrice {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    font-weight: 300;
+}
+
+.carRange {
+    font-size: .8rem;
+    font-weight: 300;
+    color: var(--text-color-secondary);
+}
+
+.bookNowBtn {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--text-color-secondary);
+    color: var(--text-color);
+    font-weight: 300;
+    height: 40px;
+    transition: all .3s;
+}
+
+.bookNowBtn:hover {
+    transition: all .3s;
+    background-color: var(--secondary-color);
+    border: 1px solid transparent;
+}
+
+.soldout {
+    position: absolute;
+    background-color: var(--secondary-color);
+    top: 0;
+    left: 0;
+    font-weight: 300;
+    padding: .2rem;
+}
+
+/* Filter */
+.filterWindow {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 1;
+    display: none;
+    /* border: 2px solid red; */
+    /* box-shadow: 0 0 10px 0 var(--secondary-color); */
+}
+.filterElements{
+    /* animation: .3s ease-in-out 0s 1 slideInLeft; */
+    background-color: black;
+    position: fixed;
+    width: 450px;
+    height: 100vh;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+    padding: 6rem 1rem 1rem 1rem;
+    z-index: 1;
+    transition: all .3s;
+}
+.filterElements::-webkit-scrollbar {
+    display: none;
+}
+.filterWindow::-webkit-scrollbar {
+    display: none;
+}
+
+.filterHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+    font-size: 1.2rem;
+    width: inherit;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    z-index: 3;
+    /* gap: 1rem; */
+}
+
+.filterElement {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.filterSortBy label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    display: flex;
+    gap: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--text-color-secondary);
+}
+.checkbox span{
+    font-size: 14px;
+    color: var(--text-color-secondary);
+}
+.filterSortBy label input {
+    visibility: hidden;
+    position: absolute;
+    /* display: block; */
+    /* height: 0; */
+    /* width: 0; */
+    /* overflow: hidden; */
+}
+
+.filterSortBy label span {
+    height: 22px;
+    width: 22px;
+    border: 2px solid var(--secondary-color);
+    display: inline-block;
+}
+
+[type=checkbox]:checked+span {
+    background: var(--secondary-color);
+}
+
+.filterHeaderText {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.filterPriceRange {
+    width: 100%;
+    position: relative;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 1rem;
+    background: var(--text-color);
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background: var(--text-color);
+    border: 3px solid var(--secondary-color);
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    background: var(--text-color);
+    border: 3px solid var(--secondary-color);
+    cursor: pointer;
+}
+.priceRangeValue{
+    width: 100%;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.carStyle{
+width: 100%;
+}
+.carTypeList{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: space-between;
+    gap: inherit;
+    /* border: 1px solid; */
+}
+.carTypeList div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+.carTypeList div img{
+    width: 114px;
+    height: 77px;
+}
+.carTypeList div span{
+    font-size: .8rem;
+    font-weight: 300;
+}
+.carBrands{
+    margin-bottom: 6rem;
+}
+.results{
+    width: inherit;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    border-top: 1px solid var(--text-color-secondary);
+    display: flex;
+    gap: 1rem;
+}
+.resultBtns{
+    width: 50%;
+    background-color: transparent;
+    border: 1px solid var(--text-color-secondary);
+    color: var(--text-color);
+    font-weight: 300;
+    height: 50px;
+    font-weight: 300;
+    transition: all .3s;
+}
+.resultBtns:hover {
+    transition: all .3s;
+    background-color: var(--secondary-color);
+    border: 1px solid transparent;
+}
+
+.slideInLeft{
+    animation: .3s ease-in-out 0s 1 slideInLeft;
+}
+.slideOutLeft{
+    animation: .3s ease-in-out 0s 1 slideOutLeft;
+}
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideOutLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }

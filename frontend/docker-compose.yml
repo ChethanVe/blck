@@ -1,0 +1,23 @@
+version: "3"
+services:
+  web_server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      blck_network:
+        ipv4_address: 172.19.0.80
+
+networks:
+  blck_network:
+    driver: bridge
+    # external: true
+    ipam:
+      #driver: default
+      # options: null
+      config:
+        - subnet: 172.19.0.0/24
+        # gateway: 172.19.0.1 -- only for version 2

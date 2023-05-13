@@ -1,0 +1,29 @@
+{
+    "data":[
+        {
+            "id":1,
+            "name":"Luxury",
+            "image":"Luxury.jpg"
+        },
+        {
+            "id":2,
+            "name":"Sports",
+            "image":"Sports-Car.png"
+        },
+        {
+            "id":3,
+            "name":"Executive",
+            "image":"Executive.jpg"
+        },
+        {
+            "id":4,
+            "name":"Super",
+            "image":"Super-Car.png"
+        },
+        {
+            "id":5,
+            "name":"Premium",
+            "image":"Premium.png"
+        }
+    ]
+}
