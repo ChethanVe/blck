@@ -76,5 +76,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-times": "^3.1.12"
-  }
+  },
+
+  "proxy": "http://172.19.0.80:3005",
+  "homepage": "http://blckluxury.com/"
 }
