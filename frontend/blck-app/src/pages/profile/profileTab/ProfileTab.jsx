@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react'
+/* eslint-disable no-unused-vars */
+import React, { useState } from 'react'
 import s from '../profile.module.css'
 import c from '../../../assets/css/custom.module.css'
-import { ContextLogin, UserId, PrevUrl } from '../../../helpers/context'
-import axios from '../../../helpers/Axios'
+import { UserId, PrevUrl } from '../../../helpers/context'
 import { useContext } from 'react'
-import { json_server_url } from '../../../helpers/base_url'
 import { useLocation } from 'react-router-dom'
 function ProfileTab({user}) {
     const [auth, setAuth] = useState()

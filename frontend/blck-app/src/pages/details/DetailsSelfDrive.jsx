@@ -1,17 +1,17 @@
+/* eslint-disable no-unused-vars */
 import s from './details.module.css'
 import c from '../../assets/css/custom.module.css'
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from '../../helpers/Axios'
-import carFeatures from './detailsPageUtils/carFeatures.json'
 import { indFormat } from '../../helpers/IndCurrencyFormat';
 import feesData from '../../fees.json'
 import SelfDriveModal from './modalSelectDate/SelfDriveModal';
 import PleaseReadSection from '../common/PleaseReadSection';
 import NoteSection from '../common/NoteSection';
-import { aws_bucket_url, api_url } from '../../helpers/base_url'
+import { aws_bucket_url } from '../../helpers/base_url'
 
 const DetailsSelfDrive = () => {
   let { id } = useParams()

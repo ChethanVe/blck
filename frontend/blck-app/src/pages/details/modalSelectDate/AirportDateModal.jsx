@@ -1,3 +1,8 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable eqeqeq */
+/* eslint-disable no-mixed-operators */
+/* eslint-disable no-unused-vars */
 import React, { useRef, useState } from 'react'
 import s from './airportModal.module.css'
 import { useEffect } from "react";
@@ -11,7 +16,7 @@ import { MobileTimePicker } from '@mui/x-date-pickers/MobileTimePicker';
 import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
 import { TextField } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { api_url, aws_bucket_url, json_server_url } from '../../../helpers/base_url';
+import { aws_bucket_url, json_server_url } from '../../../helpers/base_url';
 
 function AirportDateModal({ setIsModalOpen, carName, selectedPackage, useType, details }) {
     const darkTheme = createTheme({

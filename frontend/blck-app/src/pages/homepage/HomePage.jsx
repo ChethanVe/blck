@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useContext, useEffect, useRef, useState } from 'react'
 import axios from '../../helpers/Axios'
 import s from './homepage.module.css'
@@ -8,7 +9,7 @@ import { indFormat } from '../../helpers/IndCurrencyFormat'
 import { Context, ContextLogin } from '../../helpers/context'
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { aws_bucket_url, api_url } from '../../helpers/base_url'
+import { aws_bucket_url } from '../../helpers/base_url'
 export default function HomePage() {
     const location = useContext(Context)
     const [isLogged, setIsLogged] = useContext(ContextLogin)

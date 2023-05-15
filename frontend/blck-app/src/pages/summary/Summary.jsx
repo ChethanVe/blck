@@ -1,15 +1,15 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState, useContext } from 'react'
 import s from './summary.module.css'
 import c from '../../assets/css/custom.module.css'
 import { indFormat } from '../../helpers/IndCurrencyFormat'
 import axios from '../../helpers/Axios'
 import feesData from '../../fees.json'
-import { aws_bucket_url, api_url, json_server_url } from '../../helpers/base_url'
-import { Context, ContextLogin, PrevUrl } from '../../helpers/context'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { aws_bucket_url, json_server_url } from '../../helpers/base_url'
+import { PrevUrl } from '../../helpers/context'
+import { useLocation, useNavigate } from 'react-router-dom'
 function Summary() {
   let nav = useNavigate()
-  const [isLogged, setIsLogged] = useContext(ContextLogin)
   const [prevUrl, setPrevUrl] = useContext(PrevUrl)
   const [loaded, setLoaded] = useState(false)
   const [priceData, setPriceData] = useState()

@@ -4,7 +4,7 @@ import c from '../../assets/css/custom.module.css'
 import { indFormat } from '../../helpers/IndCurrencyFormat'
 import axios from 'axios'
 import feesData from '../../fees.json'
-import { aws_bucket_url, api_url, json_server_url } from '../../helpers/base_url'
+import { aws_bucket_url, json_server_url } from '../../helpers/base_url'
 
 function SummarySelfDrive() {
 

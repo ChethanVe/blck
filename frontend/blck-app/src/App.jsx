@@ -1,11 +1,9 @@
 import './app.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Routes, Route, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import React from 'react';
 import Navbar from './pages/nav-foot/Navbar';
 import Footer from "./pages/nav-foot/Footer";
-import ScrollToTop from './helpers/ScrollToTop';
-import { AllRoutes } from './routes/AllRoutes';
 import { useEffect } from 'react';
 import { useState } from 'react';
 function App() {

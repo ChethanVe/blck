@@ -7,12 +7,7 @@ import yacht6 from '../../assets/images/yachts/yacht6.jpg'
 import yacht7 from '../../assets/images/yachts/yacht7.jpg'
 import yacht8 from '../../assets/images/yachts/yacht8.jpg'
 import yacht9 from '../../assets/images/yachts/yacht9.jpg'
-import yacht10 from '../../assets/images/yachts/yacht10.jpg'
 import yacht11 from '../../assets/images/yachts/yacht11.jpg'
-import yacht12 from '../../assets/images/yachts/yacht12.jpg'
-import yacht13 from '../../assets/images/yachts/yacht13.jpg'
-import yacht14 from '../../assets/images/yachts/yacht14.jpg'
-import yacht15 from '../../assets/images/yachts/yacht15.jpg'
 
 const YatchApi = [
     {

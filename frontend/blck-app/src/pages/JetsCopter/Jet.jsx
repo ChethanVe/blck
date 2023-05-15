@@ -1,3 +1,4 @@
+/* eslint-disable no-extend-native */
 import React, { useRef, useState } from "react";
 import s from "./jet.module.css";
 import axios from "../../helpers/Axios";

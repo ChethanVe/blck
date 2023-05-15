@@ -1,16 +1,15 @@
-import React, { useEffect, useRef, useState } from "react";
+/* eslint-disable no-extend-native */
+import React, { useRef, useState } from "react";
 import s from "./yachts.module.css";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-import Accordion from "react-bootstrap/Accordion";
 import axios from "../../helpers/Axios";
 import YachtThanksPopup from "./YachtThanksPopup";
 
-function YachtForm({ show, setShow, price, showTime, yachtName }) {
+function YachtForm({ show, setShow, yachtName }) {
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-  const [open, setOpen] = useState(false);
+
   const [lgShow, setLgShow] = useState(false);
 
   const [data, setData] = useState({
@@ -99,7 +98,7 @@ function YachtForm({ show, setShow, price, showTime, yachtName }) {
     } else {
       axios
         .post("/yacht_enquires", payload)
-        .then((res) => {
+        .then(() => {
           console.log("yacht data reached");
           setLgShow(true)
         })
@@ -192,25 +191,7 @@ function YachtForm({ show, setShow, price, showTime, yachtName }) {
                   />
                   <a href="/">T & C</a>
                 </Form.Group>
-                {/* <div className={s.checkboxsection} controlId="formBasicCheckbox"> */}
-                {/* <input type="checkbox" id="agreebox" name="agreebox"   /> */}
-                {/* <label htmlFor='agreebox'>I agree to the <a>T & C</a></label> */}
-                {/* <Form.Check type="checkbox" label="Check me out" /> */}
-                {/* </div> */}
-                {/* <Accordion defaultActiveKey="0" >
-                        <Accordion.Item eventKey="0">
-                            <Accordion.Header onClick={()=>{setOpen(!open)}}>{open ?"please read":"close"}</Accordion.Header>
-                            <Accordion.Body>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum.
-                            </Accordion.Body>
-                        </Accordion.Item>
-                    </Accordion> */}
+                
               </div>
               <div
                 ref={agreeRef}

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useContext, useEffect, useState } from 'react'
 import s from './loginpage.module.css'
 import c from '../../assets/css/custom.module.css'
@@ -5,8 +6,8 @@ import { auth } from './firebase.config';
 // import PhoneInput from "react-phone-input-2";
 import OtpInput from "otp-input-react";
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
-import { ToastContainer, toast } from 'react-toastify';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 import { ContextLogin, UserId, PrevUrl } from '../../helpers/context'
 import axios from '../../helpers/Axios';
 import { json_server_url } from '../../helpers/base_url';

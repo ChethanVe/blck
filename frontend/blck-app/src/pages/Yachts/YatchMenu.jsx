@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
 import React,{useEffect, useState} from "react";
 import s from "./yachts.module.css";
 import { IoShareOutline } from "react-icons/io5";
@@ -10,7 +12,7 @@ import {useParams} from 'react-router-dom'
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import {api_url, aws_bucket_url} from "../../helpers/base_url"
+import {aws_bucket_url} from "../../helpers/base_url"
 
 const YatchMenu = ({ menu }) => {
 

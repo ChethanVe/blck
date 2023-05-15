@@ -1,4 +1,8 @@
-import React, { useContext, useReducer, useRef, useState } from 'react'
+/* eslint-disable no-mixed-operators */
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable eqeqeq */
+/* eslint-disable no-unused-vars */
+import React, { useContext, useRef, useState } from 'react'
 import s from './outStationModal.module.css'
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router";
@@ -6,22 +10,21 @@ import c from '../../../assets/css/custom.module.css'
 import { indFormat } from '../../../helpers/IndCurrencyFormat';
 import axios from 'axios';
 import feesData from '../../../fees.json'
-import { Context, ContextLogin } from '../../../helpers/context'
+import { Context } from '../../../helpers/context'
 import dayjs from 'dayjs';
 import { MobileTimePicker } from '@mui/x-date-pickers/MobileTimePicker';
 import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
 import { TextField } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { aws_bucket_url, api_url, json_server_url } from '../../../helpers/base_url';
+import { aws_bucket_url, json_server_url } from '../../../helpers/base_url';
 
-function OutStationDateModal({ setIsModalOpen, carName, selectedPackage, rent, useType, thisPackage, details }) {
+function OutStationDateModal({ setIsModalOpen, carName, selectedPackage, useType, details }) {
     const darkTheme = createTheme({
         palette: {
             mode: 'dark',
         },
     });
     let nav = useNavigate()
-    const location = useContext(Context)
     let modal = useRef()
     let startTimeRef = useRef()
     let startDateRef = useRef()
@@ -128,14 +131,14 @@ function OutStationDateModal({ setIsModalOpen, carName, selectedPackage, rent, u
             for (let i = 0; i < clean.length; i++) {
                 try {
                     axios.delete(`${json_server_url}/outStation/${clean[i].id}`)
-                        .then((res) => { })
+                        .then(() => { })
                         .catch((err) => { console.log(err) })
                 } catch (error) { console.log('Not deleted!'); }
             }
 
             try {
                 axios.post(`${json_server_url}/outStation`, data)
-                    .then((res) => { nav(`/summary-outstation/${details.car.id}`) })
+                    .then(() => { nav(`/summary-outstation/${details.car.id}`) })
                     .catch((err) => { console.log(err) })
             } catch (error) { console.log('Not Sent!'); }
         }

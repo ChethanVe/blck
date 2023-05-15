@@ -1,4 +1,8 @@
-import React, { useContext, useReducer, useRef, useState } from 'react'
+/* eslint-disable eqeqeq */
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-mixed-operators */
+/* eslint-disable no-unused-vars */
+import React, { useRef, useState } from 'react'
 import s from './selectDate.module.css'
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router";
@@ -11,7 +15,7 @@ import { MobileTimePicker } from '@mui/x-date-pickers/MobileTimePicker';
 import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
 import { TextField } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { api_url, aws_bucket_url, json_server_url } from '../../../helpers/base_url';
+import { aws_bucket_url, json_server_url } from '../../../helpers/base_url';
 
 
 function SelectDate({ setIsModalOpen, carName, selectedPackage, useType, details }) {

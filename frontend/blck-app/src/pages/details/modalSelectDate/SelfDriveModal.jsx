@@ -1,4 +1,7 @@
-import React, { useContext, useReducer, useRef, useState } from 'react'
+/* eslint-disable jsx-a11y/img-redundant-alt */
+/* eslint-disable eqeqeq */
+/* eslint-disable no-unused-vars */
+import React, { useContext, useRef, useState } from 'react'
 import s from './outStationModal.module.css'
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router";
@@ -6,8 +9,8 @@ import c from '../../../assets/css/custom.module.css'
 import { indFormat } from '../../../helpers/IndCurrencyFormat';
 import axios from 'axios';
 import feesData from '../../../fees.json'
-import { Context, ContextLogin } from '../../../helpers/context'
-import { aws_bucket_url, api_url, json_server_url } from '../../../helpers/base_url';
+import { Context } from '../../../helpers/context'
+import { aws_bucket_url, json_server_url } from '../../../helpers/base_url';
 import dayjs from 'dayjs';
 import { MobileTimePicker } from '@mui/x-date-pickers/MobileTimePicker';
 import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';

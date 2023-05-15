@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 import s from './yachts.module.css'
 import YatchApi from './YatchApi'

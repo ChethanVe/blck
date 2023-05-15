@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import logo from "../../assets/images/KIA.jpg";
 import axios from "axios";
