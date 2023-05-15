@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable eqeqeq */
 /* eslint-disable no-unused-vars */
 import React, { useContext, useEffect, useRef, useState } from 'react'
 import s from './profile.module.css'

@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState, useContext } from 'react'
 import s from './summary.module.css'
@@ -167,7 +168,7 @@ function Summary() {
               <label>
                 <input type="checkbox" onChange={() => { setAgreedToTerms(!agreedToTerms) }} />
               </label>
-              <span className={c.extraSmallText}>I agree to the <span className={c.secondaryColor}><a target={'_blank'} href={'/terms-and-conditions'}>Terms & Conditions</a></span></span>
+              <span className={c.extraSmallText}>I agree to the <span className={c.secondaryColor}><a target={'_blank'} href={'/terms-and-conditions'} rel="noreferrer">Terms & Conditions</a></span></span>
             </span>
             <div className={`${c.split} ${s.buttons}`}>
               <button className={c.primaryBtnFilled}

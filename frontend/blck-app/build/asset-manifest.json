@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "./blck-app/static/css/main.ffafa5de.css",
+    "main.js": "./blck-app/static/js/main.5eaefd89.js",
+    "static/media/yacht1.jpg": "./blck-app/static/media/yacht1.264973512dbfe131a353.jpg",
+    "static/media/yacht7.jpg": "./blck-app/static/media/yacht7.6c0fa64aecf6d1a42195.jpg",
+    "static/media/yacht11.jpg": "./blck-app/static/media/yacht11.09cc3570158e7576dd28.jpg",
+    "static/media/yacht2.jpg": "./blck-app/static/media/yacht2.afe7e5a7f800301d496c.jpg",
+    "static/media/yacht3.jpg": "./blck-app/static/media/yacht3.70a0b1b4ceef6d1de711.jpg",
+    "static/media/yacht4.jpg": "./blck-app/static/media/yacht4.edc6d782ab99fc9de359.jpg",
+    "static/media/yacht8.jpg": "./blck-app/static/media/yacht8.ee7e65a2024fd24091ef.jpg",
+    "static/media/yacht6.jpg": "./blck-app/static/media/yacht6.905d3ab1930fc9388c33.jpg",
+    "static/media/Group 3666.png": "./blck-app/static/media/Group 3666.3b2fff8d7d47fbe83c65.png",
+    "static/media/Group 3667.png": "./blck-app/static/media/Group 3667.84f7be1fb38a450e367d.png",
+    "static/media/yacht9.jpg": "./blck-app/static/media/yacht9.595cc74a4785fb3c889e.jpg",
+    "static/media/headerRectangle.png": "./blck-app/static/media/headerRectangle.a74d098adf198d9ed208.png",
+    "static/media/ferrari-logo.png": "./blck-app/static/media/ferrari-logo.abf1d26d753c924b3298.png",
+    "static/media/yacht5.jpg": "./blck-app/static/media/yacht5.b321b20f8e6b13c1efa4.jpg",
+    "static/media/profile-banner.png": "./blck-app/static/media/profile-banner.df80c6c0bc52420442af.png",
+    "static/media/bmw-logo.png": "./blck-app/static/media/bmw-logo.5dc8df5603d31699e8eb.png",
+    "static/media/audi-logo.png": "./blck-app/static/media/audi-logo.04268e36b97b8a8560bf.png",
+    "static/media/Group 7771.png": "./blck-app/static/media/Group 7771.2e55a276dcb9446b7e27.png",
+    "static/media/contact-us-banner.jpg": "./blck-app/static/media/contact-us-banner.c32129ec89be73048aa0.jpg",
+    "static/media/Group 7770.png": "./blck-app/static/media/Group 7770.afcfdf9a42fdf667c895.png",
+    "static/media/Group 7772.png": "./blck-app/static/media/Group 7772.5eb3bf343075382f4d61.png",
+    "static/media/logo-big.png": "./blck-app/static/media/logo-big.06a5ae1887e41e07aec0.png",
+    "index.html": "./blck-app/index.html",
+    "static/media/down-arrow.svg": "./blck-app/static/media/down-arrow.c794b825cfa5a113cec9.svg",
+    "main.ffafa5de.css.map": "./blck-app/static/css/main.ffafa5de.css.map",
+    "main.5eaefd89.js.map": "./blck-app/static/js/main.5eaefd89.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffafa5de.css",
+    "static/js/main.5eaefd89.js"
+  ]
+}

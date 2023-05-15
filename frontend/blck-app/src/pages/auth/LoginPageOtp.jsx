@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-concat */
 /* eslint-disable no-unused-vars */
 import React, { useContext, useEffect, useState } from 'react'
 import s from './loginpage.module.css'
